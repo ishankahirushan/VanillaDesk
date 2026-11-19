@@ -1,0 +1,41 @@
+<section class="section-content">
+    <header class="section-header">
+        <div class="section-header-text">
+            <h1 class="section-title" id="billing-title">Billing (POS)</h1>
+            <p class="section-subtitle">Add products to the cart and complete the sale</p>
+        </div>
+    </header>
+
+    <div class="billing-layout">
+        <div class="billing-products">
+            <div class="search-box">
+                <span class="search-icon" aria-hidden="true">🔍</span>
+                <input type="search" class="search-input" id="billing-search"
+                       placeholder="Search product to add" autocomplete="off">
+            </div>
+
+            <div class="product-results" id="billing-results">
+ 
+            </div>
+        </div>
+
+        <aside class="billing-cart">
+            <h2 class="billing-cart-title">Cart</h2>
+
+            <div class="cart-items" id="cart-items">
+
+            </div>
+
+            <p class="cart-empty" id="cart-empty">Cart is empty</p>
+
+            <div class="billing-totals">
+                <div class="billing-total-row is-grand">
+                    <span>Total</span>
+                    <span id="cart-total">0.00</span>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-block" id="checkout-btn" disabled>Complete Sale</button>
+        </aside>
+    </div>
+</section>

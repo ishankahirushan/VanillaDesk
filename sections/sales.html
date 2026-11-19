@@ -1,0 +1,83 @@
+<section class="section-content">
+    <header class="section-header">
+        <div class="section-header-text">
+            <h1 class="section-title" id="sales-title">Sales</h1>
+            <p class="section-subtitle">Past completed sales</p>
+        </div>
+    </header>
+
+    <div class="stat-cards" aria-label="Sales statistics">
+        <div class="stat-card-body">
+            <p class="stat-card-label">Total Sales</p>
+            <p class="stat-card-value" id="stat-sales-count">0</p>
+        </div>
+        <div class="stat-card-body">
+            <p class="stat-card-label">Total Revenue</p>
+            <p class="stat-card-value" id="stat-sales-revenue">0.00</p>
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="data-table sales-table" id="sales-table">
+            <thead class="data-table-head">
+                <tr>
+                    <th scope="col" class="col-id">Sale ID</th>
+                    <th scope="col" class="col-date">Date</th>
+                    <th scope="col" class="col-qty">Items</th>
+                    <th scope="col" class="col-price">Total</th>
+                    <th scope="col" class="col-actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="data-table-body" id="sales-tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="empty-state" id="sales-empty" hidden>
+        <p class="empty-state-title">No sales yet</p>
+        <p class="empty-state-text">Start making sales in the Billing section.</p>
+    </div>
+
+    <div class="modal-overlay" id="sale-modal" hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="sale-modal-title">
+            <header class="modal-header">
+                <h2 class="modal-title" id="sale-modal-title">Sale Details</h2>
+                <button type="button" class="modal-close" id="sale-modal-close" aria-label="Close">×</button>
+            </header>
+
+            <div class="modal-body">
+                <div class="product-summary">
+                    <div class="product-summary-row">
+                        <span class="product-summary-label">Sale ID</span>
+                        <span class="product-summary-value" id="sale-detail-id"></span>
+                    </div>
+                    <div class="product-summary-row">
+                        <span class="product-summary-label">Date</span>
+                        <span class="product-summary-value" id="sale-detail-date"></span>
+                    </div>
+                </div>
+
+                <table class="data-table sale-detail-table">
+                    <thead class="data-table-head">
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col" class="col-qty">Qty</th>
+                            <th scope="col" class="col-price">Line Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="data-table-body" id="sale-detail-items">
+
+                    </tbody>
+                </table>
+
+                <div class="billing-totals">
+                    <div class="billing-total-row is-grand">
+                        <span>Total</span>
+                        <span id="sale-detail-total">0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
