@@ -116,11 +116,10 @@ export function initProductsSection() {
 
         productsTableBody.innerHTML = '';
 
-        products.forEach((product, index) => {
+        products.forEach((product) => {
             const row = document.createElement('tr');
-            row.dataset.id = product.id;
             row.innerHTML = `
-                <td class="col-id">${index + 1}</td>
+                <td class="col-id">${product.id}</td>
                 <td class="col-name">${product.name}</td>
                 <td class="col-qty">${product.quantity}</td>
                 <td class="col-reorder">${product.reorderLevel}</td>

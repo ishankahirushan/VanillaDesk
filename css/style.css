@@ -1108,6 +1108,60 @@ button {
 }
 
 /* ---- Products ---- */
+#products-table {
+    min-width: 900px;
+    table-layout: fixed;
+}
+
+#products-table th.col-id,
+#products-table td.col-id {
+    width: 30%;
+}
+
+#products-table td.col-id {
+    white-space: nowrap;
+    overflow: visible;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+}
+
+#products-table .col-name {
+    width: 10%;
+}
+
+#products-table .col-qty {
+    width: 14%;
+}
+
+#products-table .col-reorder {
+    width: 14%;
+}
+
+#products-table .col-price {
+    width: 14%;
+}
+
+#products-table .col-actions {
+    width: 18%;
+}
+
+#products-table th.col-id,
+#products-table td.col-id,
+#products-table th.col-name,
+#products-table td.col-name,
+#products-table th.col-qty,
+#products-table td.col-qty,
+#products-table th.col-reorder,
+#products-table td.col-reorder,
+#products-table th.col-price,
+#products-table td.col-price,
+#products-table th.col-actions,
+#products-table td.col-actions {
+    vertical-align: middle;
+}
+
 .btn-reorder {
     color: var(--color-warning);
 }
